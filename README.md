@@ -3,18 +3,20 @@
 ## The Challenge
  
 Write a program that takes as input the dimensions of a room and outputs the following:
-1.  Area of the floor
-2.  Amount of paint required to paint the walls
-3.  Volume of the room
+ 1. Area of the floor
+ 2. Amount of paint required to paint the walls
+ 3. Volume of the room
 
 For further details see: http://www.borwell.com/software-challenge
 
 ## My Response
 
-I have created a simple Java project comprising two .java files.
+I have created a simple Java project comprising two .java files:
+- `RoomChallenge.java` - the main entry point and user input management
+- `Room.java` - a class to store details of a particular room and calculate/format the user output
 
-These reside in the directory RoomChallenge and can be compiled using
--  `javac RoomChallenge/RoomChallenge.java RoomChallenge/Room.java`
+These reside in the directory `RoomChallenge` and can be compiled using
+- `javac RoomChallenge/RoomChallenge.java RoomChallenge/Room.java`
 
 Thereafter my response has been aimed at a Unix/Linux/cygwin system.
 
