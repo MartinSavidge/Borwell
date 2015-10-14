@@ -71,7 +71,9 @@ Alternative dimensions can be specified by using command line arguments (the exp
 Had I had more time I would have created a GUI window to accept input and display the output.
 This would not however have lent itself to being tested via a simple bash script!
 
-Currently the input validation and test coverage is not exhaustive and does not consider extreme values - e.g.:
+Currently the program only operates in metres and litres. This could usefully be extended to handle dimensions in feet and inches, and to specify paint requirements in numbers of standard can sizes.
+
+The input validation and test coverage is not yet exhaustive and does not consider extreme values - e.g.:
  - Negative dimensions,
  - Should the wall be too small to fit my standard sized door,
  - Invalid characters in every input argument and prompt response.
