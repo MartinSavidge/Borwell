@@ -144,9 +144,9 @@ fi
 echo ""
 echo "Checking paint requirement calculation for $length x $width x $height room ..."
 
-# Area to paint is the four walls less 40% of one "width" wall (the window) and 0.7m^2 (the door)
+# Area to paint is the four walls less 40% of one "width" wall (the window) and 1.7m^2 (the door)
 # Amount of paint required is based on covering 10.0m^2 per litre of paint
-expected=$(printf "%0.1f\n" $(echo "scale=2; ( 1.6*$width*$height + 2*$length*$height - 0.7) / 10" | bc))
+expected=$(printf "%0.1f\n" $(echo "scale=2; ( 1.6*$width*$height + 2*$length*$height - 1.7) / 10" | bc))
 
 if ! Test "$exe_cmnd" "$length $width $height" "" "require .* paint"  "$expected"
 then

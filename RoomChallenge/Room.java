@@ -12,7 +12,7 @@ package RoomChallenge;
  *
  * Assumptions:
  *  Room is cuboid
- *  Room has a single door of area 0.7 square meters
+ *  Room has a single door of area 1.7 square meters
  *  Room has a window taking up 40% of one "width" sized wall
  *  Paint coverage is 10 square meters per litre of paint
  */
@@ -71,7 +71,7 @@ public class Room
   *
   * Assuming that there is no need to paint the door and window,
   *  area to be painted is reduced by
-  *   one door (0.7 square meters)
+  *   one door (1.7 square meters)
   *   window(s) (40% of the area of one "width" wall)
   * @return total area to be painted
   */
@@ -79,7 +79,7 @@ public class Room
   {
     return ( 2 * (width * height)       // side walls
            + 2 * (length * height)      // front & back walls
-           - 0.7                        // door
+           - 1.7                        // door
            - 0.4 * (width * height) );  // window(s)
   }
 
