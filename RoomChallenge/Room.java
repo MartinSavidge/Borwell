@@ -12,9 +12,9 @@ package RoomChallenge;
  *
  * Assumptions:
  *  Room is cuboid
- *  Room has a single door of area 1.7 square meters
+ *  Room has a single door of area 1.7 square metres
  *  Room has a window taking up 40% of one "width" sized wall
- *  Paint coverage is 10 square meters per litre of paint
+ *  Paint coverage is 10 square metres per litre of paint
  */
 public class Room
 {
@@ -23,7 +23,7 @@ public class Room
   private final double height;  // From floor to ceiling (metres)
 
   /**
-   * Constructor - Requires the dimensions of the room (in meters) as arguments.
+   * Constructor - Requires the dimensions of the room (in metres) as arguments.
    *
    * @param length length of the room (from window to rear wall)
    * @param width  width of the room  (of wall containing the window)
@@ -42,7 +42,7 @@ public class Room
    *
    * For a rectangular floor - this is length * width
    *
-   * @return area of the floor in square meters
+   * @return area of the floor in square metres
    */
   public double getAreaOfFloor()
   {
@@ -55,7 +55,7 @@ public class Room
    *
    * For a cuboid room - this is floor area * height
    *
-   * @return volume of the room in cubic meters
+   * @return volume of the room in cubic metres
    */
   public double getVolumeOfRoom()
   {
@@ -71,7 +71,7 @@ public class Room
   *
   * Assuming that there is no need to paint the door and window,
   *  area to be painted is reduced by
-  *   one door (1.7 square meters)
+  *   one door (1.7 square metres)
   *   window(s) (40% of the area of one "width" wall)
   * @return total area to be painted
   */
@@ -87,7 +87,7 @@ public class Room
   /**
    * Calculate the amount of paint needed to paint the room (one coat).
    *
-   * Coverage is estimated at 10 square meters per litre of paint
+   * Coverage is estimated at 10 square metres per litre of paint
    *  (taken from B&Q website - http://www.diy.com/help-advice/wall-painting-calculator)
    *
    * @return amount of paint in litres
@@ -112,11 +112,11 @@ public class Room
   /**
   * Print area of floor
   *
-  * Output area of floor in square meters
+  * Output area of floor in square metres
   */
   public void printAreaOfFloor()
   {
-    System.out.printf("The floor area is %.3f square meters\n", getAreaOfFloor());
+    System.out.printf("The floor area is %.3f square metres\n", getAreaOfFloor());
   }
 
 
@@ -134,10 +134,10 @@ public class Room
   /**
   * Print volume of room
   *
-  * Output volume of room in cubic meters
+  * Output volume of room in cubic metres
   */
   public void printVolumeOfRoom()
   {
-    System.out.printf("The room volume is %.3f cubic meters.\n", getVolumeOfRoom());
+    System.out.printf("The room volume is %.3f cubic metres.\n", getVolumeOfRoom());
   }
 }

@@ -25,9 +25,9 @@ public class RoomChallenge
 
     Scanner input = new Scanner(System.in);
 
-    double length;  // length of room (in meters)
-    double width;   // width of room (in meters)
-    double height;  // height of room (in meters)
+    double length;  // length of room (in metres)
+    double width;   // width of room (in metres)
+    double height;  // height of room (in metres)
 
     try
     {
@@ -50,14 +50,16 @@ public class RoomChallenge
       else  // Prompt user to input dimensions
       {
 
-        System.out.println("Please enter values in meters\n");
+        System.out.println("Please enter values in metres\n");
 
         System.out.print("  room length: ");
         length = input.nextDouble();
-        System.out.print("  room width: ");
+        System.out.print("  room width:  ");
         width = input.nextDouble();
         System.out.print("  room height: ");
         height = input.nextDouble();
+
+        System.out.println("");
       }
         
       Room room = new Room(length, width, height);
@@ -72,12 +74,12 @@ public class RoomChallenge
     }
     catch(NumberFormatException nfe)  // Error in arguments (not valid numbers)
     {
-       System.out.println("Invalid argument(s) - require length width height measurements (in meters) as decimal numbers");
+       System.out.println("Invalid argument(s) - require length width height measurements (in metres) as decimal numbers");
        System.out.println(" e.g.  RoomChallenge 4.5 3.5 2   (room is 4.5m long, 3.5m wide, 2m high)");
     }
     catch(java.util.InputMismatchException ime)  // Error in responses to prompts (not valid numbers)
     {
-       System.out.println("Invalid input - require measurement (in meters) as a decimal number");
+       System.out.println("Invalid input - require measurement (in metres) as a decimal number");
     }
   }
 }
