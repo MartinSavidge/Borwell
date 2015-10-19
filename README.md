@@ -86,9 +86,9 @@ This program has been developed on a Windows / cygwin system - ideally I would h
 I have now added an Eclipse / WindowBuilder / SWT based version `RoomCalculator`.
 
 ## Content:
- - A WindowBuilder/SWT based Eclipse project containing a GUI for input of dimensions and output of calculated results,
+ - An SWT based Eclipse project containing a GUI for input of dimensions and output of calculated results,
  - A set of JUnit tests for the Room class,
- - An executable jar 'RoomCalculator.jar`,
+ - An executable jar `RoomCalculator.jar`,
  - An archive of the Eclipse project.
 
 ### Importing the project
