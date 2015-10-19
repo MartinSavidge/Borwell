@@ -81,3 +81,21 @@ The input validation and test coverage is not yet exhaustive and does not consid
 No provision has been made for installing the program as a system utility - e.g. providing a `make install`, placing it at a standard $PATH location, and/or creating a wrapper script to make invocation less cumbersome.
 
 This program has been developed on a Windows / cygwin system - ideally I would have confirmed that it is compatible with a genuine Linux system before issuing it.
+
+### Unit tests
+Normally I would have included junit tests - these would be particularly suited to the methods within Room.java.
+
+e.g.
+
+    /**
+      * Test of Room.getAreaOfFloor() method.
+      */
+     @Test
+     public void testGetAreaOfFloor()
+     {
+       double length = 4.0;
+       double width = 5.0;
+       double height = 2.0;
+       testRoom = new Room(length, width, height);
+       assertEquals("getAreaOfFloor error", length * width, testRoom.getAreaOfFloor());
+     }
