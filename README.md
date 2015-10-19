@@ -82,20 +82,19 @@ No provision has been made for installing the program as a system utility - e.g.
 
 This program has been developed on a Windows / cygwin system - ideally I would have confirmed that it is compatible with a genuine Linux system before issuing it.
 
-### Unit tests
-Normally I would have included junit tests - these would be particularly suited to the methods within Room.java.
+# Update
+I have now added an Eclipse / WindowBuilder / SWT based version `RoomCalculator`.
 
-e.g.
+## Content:
+ - A WindowBuilder/SWT based Eclipse project containing a GUI for input of dimensions and output of calculated results,
+ - A set of JUnit tests for the Room class,
+ - An executable jar 'RoomCalculator.jar`,
+ - An archive of the Eclipse project.
 
-    /**
-      * Test of Room.getAreaOfFloor() method.
-      */
-     @Test
-     public void testGetAreaOfFloor()
-     {
-       double length = 4.0;
-       double width = 5.0;
-       double height = 2.0;
-       testRoom = new Room(length, width, height);
-       assertEquals("getAreaOfFloor error", length * width, testRoom.getAreaOfFloor());
-     }
+### Importing the project
+The project may be imported into Eclipse via:
+ - `File` menu `- Import - General - Existing Projects into Workspace`
+
+### Changes to Room class
+The methods that return the results of the calculations now return a String containing the formatted value of the resultant double to the calling GUI component (for it to display), whereas previously these formatted values were printed to the standard (console) output within explanatory text.
+ 
